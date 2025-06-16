@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Header() {
   return (
     <header className="bg-white shadow fixed top-0 left-0 w-full z-50">

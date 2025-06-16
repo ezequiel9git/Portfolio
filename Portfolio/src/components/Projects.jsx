@@ -1,3 +1,6 @@
+
+import React from 'react';
+
 const projects = [
   {
     title: "Chat WebSocket",

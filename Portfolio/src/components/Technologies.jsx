@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 
