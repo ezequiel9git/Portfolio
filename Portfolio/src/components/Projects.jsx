@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const projects = [
@@ -30,13 +29,13 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 bg-gray-50">
+    <section id="projects" className="py-20 px-4 bg-white/80 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Proyectos</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-blue-700">Proyectos</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <div key={index} className="bg-white/70 rounded-2xl shadow-md p-6 hover:shadow-xl transition backdrop-blur">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">{project.title}</h3>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <ul className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((t, i) => (

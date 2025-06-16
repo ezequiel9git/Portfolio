@@ -7,3 +7,23 @@ html {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
+    color: #1f2937; /* Gray-800 */
+  }
+
+  h1, h2, h3, h4 {
+    @apply text-gray-900;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+}
