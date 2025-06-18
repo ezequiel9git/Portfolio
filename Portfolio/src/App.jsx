@@ -12,12 +12,12 @@ import About from './components/About';
 function App() {
   return (
     <>
-      <Navbar />
-      <main className="pt-20"> {/* Asegura espacio para la navbar fija */}
+      
+      <main> {/* Asegura espacio para la navbar fija */}
         <Header />
         <Hero />
-        <About />
         <Projects />
+        <About />
         <Technologies />
         <Contact />
       </main>
