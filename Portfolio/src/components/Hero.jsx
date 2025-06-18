@@ -25,7 +25,10 @@ export default function Hero() {
           Hola, soy Ezequiel
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8">
-          Desarrollador web especializado en React, Node.js y experiencias modernas.
+         Soy un desarrollador de aplicaciones web con pasión por el frontend al que le encanta dar vida a las interfaces. No obstante, también tengo ambición por expandir mis habilidades al backend para ser un desarrollador más completo. Quiero aprender todo lo que pueda mientras pueda, y lo que no supla mi talento, lo hará mi ilusión y voluntad, que de eso tengo cuerda para rato.
+        </p>
+        <p className="text-lg md:text-xl text-gray-300 mb-8">
+        Mi forma de trabajo apuesta por la creatividad, la atención al detalle y la prioritaria experiencia del usuario, y es que concibo la programación también como un arte. Un arte que eso sí, debe construirse con la disciplina, profesionalidad y compañerismo por encima de todo. 
         </p>
         <motion.a
           href="#contact"
