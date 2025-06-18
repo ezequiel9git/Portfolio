@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Technologies from './components/Technologies';
 import Contact from './components/Contact';
+import Header from './components/Header';
+import About from './components/About';
 
 
 function App() {
@@ -12,10 +14,9 @@ function App() {
     <>
       <Navbar />
       <main className="pt-20"> {/* Asegura espacio para la navbar fija */}
+        <Header />
         <Hero />
-        <div className="bg-blue-500 text-white p-4">
-          Prueba de Tailwind
-        </div>
+        <About />
         <Projects />
         <Technologies />
         <Contact />
