@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import elysiaImg from "../assets/elysia.png";
 import vuela21Img from "../assets/vuela21.png";
 import portfolioImg from "../assets/portfolio.png";
+import GithubLogo from '../assets/GithubLogo.png';
 
 const projects = [
   {
@@ -40,7 +41,7 @@ const projects = [
   },
   {
     title: "Portfolio",
-    description: "Presente portfolio personal.",
+    description: "Proyecto correspondiente a este portfolio personal, donde expongo mis habilidades y proyectos.",
     tech: ["HTML", "JavaScript", "Vite", "React", "Tailwind CSS"],
     url: "https://github.com/ezequiel9git/Portfolio",
     image: portfolioImg,
@@ -54,7 +55,7 @@ export default function Projects() {
       className="relative py-24 px-4 bg-gradient-to-br from-black via-gray-900 to-black"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-white mb-14">
+        <h2 className="text-4xl font-bold text-center text-blue-500 mb-14">
           Proyectos
         </h2>
         <div className="grid md:grid-cols-3 gap-10">
@@ -87,14 +88,15 @@ export default function Projects() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline text-sm"
-                >
-                  Ver en GitHub →
-                </a>
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center"
+                  >
+                    <img src={GithubLogo} alt="GitHub Logo" className="w-10 h-10" />
+                  </a>
+
               </div>
             </motion.div>
           ))}
