@@ -28,7 +28,7 @@ export default function Hero() {
         <motion.img
           src={profileImage}
           alt="Foto de Ezequiel"
-          className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-2xl border-4 border-blue-600 object-cover"
+          className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-2xl border-4 border-cyan-700 object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1, delay: 0.4 }}

@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo / Nombre */}
         <motion.h1
-          className="text-xl md:text-2xl font-extrabold text-cyan-400 tracking-wide"
+          className="text-xl md:text-2xl font-extrabold text-cyan-500 tracking-wide"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -23,7 +23,7 @@ export default function Header() {
         {/* Navegación */}
         <nav className="space-x-4 text-sm md:text-base font-medium text-gray-200">
           {[
-            { name: "Sobre mí", href: "#about" },
+            { name: "Sobre mí", href: "#hero" },
             { name: "Proyectos", href: "#projects" },
             { name: "Tecnologías", href: "#technologies" },
             { name: "Contacto", href: "#contact" },
