@@ -1,12 +1,50 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPython, SiPhp, SiMysql,
-  SiPostgresql, SiXml, SiMarkdown, SiAngular, SiReact, SiVite, SiTailwindcss,
+  SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPython, SiPhp, SiMysql, SiVirtualbox,
+  SiPostgresql, SiXml, SiMarkdown, SiAngular, SiReact, SiVite, SiTailwindcss, SiMariadb,
   SiBootstrap, SiDjango, SiSpring, SiSymfony, SiNodedotjs, SiMoodle, SiGit, SiDbeaver,
   SiGithub, SiDocker, SiApache, SiNotepadplusplus, SiEclipseide,
 } from 'react-icons/si';
-import { FaCode, FaDatabase, FaTools, FaJava } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaJava } from 'react-icons/fa';
+
+// Colores personalizados por tecnología (nombre coincide con items)
+const iconColors = {
+  HTML: "#e34c26",
+  CSS: "#264de4",
+  JavaScript: "#f0db4f",
+  TypeScript: "#3178c6",
+  Python: "#3776AB",
+  Java: "#e34c26",
+  PHP: "#7952b3",
+  SQL: "#0db7ed",
+  XML: "#3c873a",
+  Markdown: "#083fa1",
+
+  Angular: "#dd0031",
+  React: "#61dafb",
+  Vite: "#646cff",
+  "Tailwind CSS": "#38bdf8",
+  Bootstrap: "#7952b3",
+  Django: "#3c873a",
+  "Spring Boot": "#6db33f",
+  Symfony: "#7952b3",
+  "Node.js": "#3c873a",
+  PostgreSQL: "#0db7ed",
+  MariaDB: "#f7931e",
+  Moodle: "#f7931e",
+
+  Git: "#f1502f",
+  GitHub: "#ffffff",
+  Docker: "#0db7ed",
+  "VS Code": "#007ACC",
+  Eclipse: "#7952b3",
+  "Notepad++": "#90e59a",
+  Apache: "#d22128",
+  Virtualenv: "#3c873a",
+  DBeaver: "#e38c00",
+  "MySQL Workbench": "#0db7ed",
+};
 
 const sections = [
   {
@@ -19,7 +57,7 @@ const sections = [
       { name: "Python", icon: <SiPython /> },
       { name: "Java", icon: <FaJava /> },
       { name: "PHP", icon: <SiPhp /> },
-      { name: "SQL", icon: <SiMysql /> },
+      { name: "SQL", icon: <FaDatabase /> },
       { name: "XML", icon: <SiXml /> },
       { name: "Markdown", icon: <SiMarkdown /> },
     ],
@@ -37,7 +75,7 @@ const sections = [
       { name: "Symfony", icon: <SiSymfony /> },
       { name: "Node.js", icon: <SiNodedotjs /> },
       { name: "PostgreSQL", icon: <SiPostgresql /> },
-      { name: "MariaDB", icon: <SiMysql /> },
+      { name: "MariaDB", icon: <SiMariadb /> },
       { name: "Moodle", icon: <SiMoodle /> },
     ],
   },
@@ -51,9 +89,9 @@ const sections = [
       { name: "Eclipse", icon: <SiEclipseide /> },
       { name: "Notepad++", icon: <SiNotepadplusplus /> },
       { name: "Apache", icon: <SiApache /> },
-      { name: "Virtualenv", icon: <FaTools /> },
+      { name: "Virtualenv", icon: <SiVirtualbox /> },
       { name: "DBeaver", icon: <SiDbeaver /> },
-      { name: "MySQL Workbench", icon: <FaDatabase /> },
+      { name: "MySQL Workbench", icon: <SiMysql /> },
     ],
   },
 ];
@@ -87,7 +125,12 @@ export default function Technologies() {
                     className="flex items-center gap-2 bg-gray-700/60 hover:bg-blue-700/40 transition duration-300 px-3 py-2 rounded-lg"
                     whileHover={{ scale: 1.05 }}
                   >
-                    <span className="text-blue-400 text-lg">{item.icon}</span>
+                    <span
+                      className="text-lg"
+                      style={{ color: iconColors[item.name] || "#93c5fd" }}
+                    >
+                      {item.icon}
+                    </span>
                     <span>{item.name}</span>
                   </motion.li>
                 ))}
