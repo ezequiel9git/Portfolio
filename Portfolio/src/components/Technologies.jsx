@@ -1,33 +1,59 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPython, SiPhp, SiMysql,
+  SiPostgresql, SiXml, SiMarkdown, SiAngular, SiReact, SiVite, SiTailwindcss,
+  SiBootstrap, SiDjango, SiSpring, SiSymfony, SiNodedotjs, SiMoodle, SiGit, SiDbeaver,
+  SiGithub, SiDocker, SiApache, SiNotepadplusplus, SiEclipseide,
+} from 'react-icons/si';
+import { FaCode, FaDatabase, FaTools, FaJava } from 'react-icons/fa';
 
 const sections = [
   {
     title: "Lenguajes",
     items: [
-      "HTML", "CSS", "JavaScript", "TypeScript", "Python",
-      "Java", "PHP", "SQL", "XML", "Markdown"
+      { name: "HTML", icon: <SiHtml5 /> },
+      { name: "CSS", icon: <SiCss3 /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "Python", icon: <SiPython /> },
+      { name: "Java", icon: <FaJava /> },
+      { name: "PHP", icon: <SiPhp /> },
+      { name: "SQL", icon: <SiMysql /> },
+      { name: "XML", icon: <SiXml /> },
+      { name: "Markdown", icon: <SiMarkdown /> },
     ],
   },
   {
     title: "Frameworks y Plataformas",
     items: [
-      "Angular", "React", 
-      "Vite", "Axios", 
-      "Tailwind CSS", "Bootstrap",
-      "Django", "SpringBoot",
-      "Symfony", "Node.js",
-      "PostgreSQL", "MariaDB", "Moodle",
+      { name: "Angular", icon: <SiAngular /> },
+      { name: "React", icon: <SiReact /> },
+      { name: "Vite", icon: <SiVite /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Bootstrap", icon: <SiBootstrap /> },
+      { name: "Django", icon: <SiDjango /> },
+      { name: "Spring Boot", icon: <SiSpring /> },
+      { name: "Symfony", icon: <SiSymfony /> },
+      { name: "Node.js", icon: <SiNodedotjs /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "MariaDB", icon: <SiMysql /> },
+      { name: "Moodle", icon: <SiMoodle /> },
     ],
   },
   {
     title: "Herramientas",
     items: [
-      "Git", "Eclipse", 
-      "GitHub", "Visual Studio Code", 
-      "Apache", "Notepad++",
-      "DBeaver", "Virtualenv",
-      "Workbench", "Docker"
+      { name: "Git", icon: <SiGit /> },
+      { name: "GitHub", icon: <SiGithub /> },
+      { name: "Docker", icon: <SiDocker /> },
+      { name: "VS Code", icon: <FaCode /> },
+      { name: "Eclipse", icon: <SiEclipseide /> },
+      { name: "Notepad++", icon: <SiNotepadplusplus /> },
+      { name: "Apache", icon: <SiApache /> },
+      { name: "Virtualenv", icon: <FaTools /> },
+      { name: "DBeaver", icon: <SiDbeaver /> },
+      { name: "MySQL Workbench", icon: <FaDatabase /> },
     ],
   },
 ];
@@ -58,10 +84,11 @@ export default function Technologies() {
                 {section.items.map((item, i) => (
                   <motion.li
                     key={i}
-                    className="bg-gray-700/60 hover:bg-blue-700/40 transition duration-300 px-3 py-2 rounded-lg"
+                    className="flex items-center gap-2 bg-gray-700/60 hover:bg-blue-700/40 transition duration-300 px-3 py-2 rounded-lg"
                     whileHover={{ scale: 1.05 }}
                   >
-                    {item}
+                    <span className="text-blue-400 text-lg">{item.icon}</span>
+                    <span>{item.name}</span>
                   </motion.li>
                 ))}
               </ul>
