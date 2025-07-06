@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import elysiaImg from "../assets/elysia.png";
 import vuela21Img from "../assets/vuela21.png";
-import portfolioImg from "../assets/portfolio.png";
+import futbolImg from "../assets/futbol.png";
 import GithubLogo from '../assets/GithubLogo.png';
 
 const projects = [
@@ -40,11 +40,11 @@ const projects = [
     image: vuela21Img,
   },
   {
-    title: "Portfolio",
-    description: "Proyecto correspondiente a este portfolio personal, donde expongo mis habilidades y proyectos.",
+    title: "Fútbol Stars",
+    description: "Divertido juego de fútbol ideado por mí mismo que combina dados y cartas.",
     tech: ["HTML", "JavaScript", "Vite", "React", "Tailwind CSS"],
-    url: "https://github.com/ezequiel9git/Portfolio",
-    image: portfolioImg,
+    url: "https://github.com/ezequiel9git/FootballStars",
+    image: futbolImg,
   },
 ];
 
