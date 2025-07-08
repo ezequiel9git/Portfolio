@@ -43,7 +43,7 @@ const iconColors = {
   Apache: "#d22128",
   Virtualenv: "#3c873a",
   DBeaver: "#e38c00",
-  "MySQL Workbench": "#0db7ed",
+  Workbench: "#0db7ed",
 };
 
 const sections = [
@@ -91,7 +91,7 @@ const sections = [
       { name: "Apache", icon: <SiApache /> },
       { name: "Virtualenv", icon: <SiVirtualbox /> },
       { name: "DBeaver", icon: <SiDbeaver /> },
-      { name: "MySQL Workbench", icon: <SiMysql /> },
+      { name: "Workbench", icon: <SiMysql /> },
     ],
   },
 ];
