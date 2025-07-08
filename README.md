@@ -36,3 +36,6 @@ Estas son algunas de las secciones:
 
 ![imagen](https://github.com/user-attachments/assets/d0e6b6f3-77ed-48ef-9adf-c8fe4161f547)
 ![imagen](https://github.com/user-attachments/assets/fc2e5030-fc96-4da4-bb6e-e657849e4e54)
+
+
+
